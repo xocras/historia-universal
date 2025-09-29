@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Historia Universal</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Historia Universal</h1>
+
+    <div id="menu">
+      <button class="btn" onclick="startQuiz('grecia')">Grecia</button>
+      <button class="btn" onclick="startQuiz('roma')">Roma</button>
+    </div>
+
+    <div id="quiz" class="hidden">
+      <div id="question" class="question"></div>
+      <div id="answers" class="answers"></div>
+    </div>
+
+    <div id="result" class="hidden">
+      <div id="score" class="score"></div>
+      <button class="btn" onclick="goHome()">Regresar</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
