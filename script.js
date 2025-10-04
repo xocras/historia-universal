@@ -221,6 +221,7 @@ function endQuiz() {
 function goHome() {
   document.getElementById("menu").classList.remove("hidden");
   document.getElementById("result").classList.add("hidden");
+  document.getElementById("credits").classList.add("hidden");
 }
 
 // Cambiar color de fondo
@@ -239,3 +240,9 @@ window.addEventListener("load", () => {
     colorInput.value = savedColor;
   }
 });
+
+// Mostrar créditos
+function showCredits() {
+  document.getElementById("menu").classList.add("hidden");
+  document.getElementById("credits").classList.remove("hidden");
+}

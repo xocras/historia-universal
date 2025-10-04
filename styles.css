@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 64px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 h1 {
@@ -68,6 +69,10 @@ h1 {
   margin-bottom: 12px;
 }
 
+.credits {
+  margin-top: 64px;
+}
+
 #color-picker input[type="color"] {
   width: 100px;
   height: 50px;
@@ -75,6 +80,25 @@ h1 {
   cursor: pointer;
   background: none;
   border: 0.35rem solid white;
+}
+
+.credits .btn {
+  margin-top: 64px;
+}
+
+#credits {
+  text-align: center;
+}
+
+.credits-list {
+  margin-top: 16px;
+  font-size: 2rem;
+  line-height: 2;
+}
+
+.credits-list span {
+  font-size: 1.5rem;
+  line-height: 2;
 }
 
 @media (min-width: 1024px) {
