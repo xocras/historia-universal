@@ -110,6 +110,11 @@ const quizzes = {
   ],
 };
 
+// Sonidos
+const congratsSound = new Audio("rsc/sfx/congrats.mp3");
+const correctSound = new Audio("rsc/sfx/correct.mp3");
+const wrongSound = new Audio("rsc/sfx/wrong.mp3");
+
 // Estado
 let currentQuiz = [];
 let currentIndex = 0;
@@ -191,6 +196,11 @@ function checkAnswer(selectedIdx) {
   const qObj = currentQuiz[currentIndex];
   if (selectedIdx === qObj.c) {
     score++;
+    correctSound.currentTime = 0;
+    correctSound.play();
+  } else {
+    wrongSound.currentTime = 0;
+    wrongSound.play();
   }
   currentIndex++;
   showQuestion();
@@ -203,6 +213,8 @@ function endQuiz() {
   document.getElementById(
     "score"
   ).innerText = `¡Tu puntuación fue ${score} de ${currentQuiz.length}!\n¡Gracias por participar!`;
+  congratsSound.currentTime = 0;
+  congratsSound.play();
 }
 
 // Regresar
