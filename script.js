@@ -202,7 +202,7 @@ function endQuiz() {
   document.getElementById("result").classList.remove("hidden");
   document.getElementById(
     "score"
-  ).innerText = `Tu puntuación fue ${score} de ${currentQuiz.length}.\n¡Gracias por participar!`;
+  ).innerText = `¡Tu puntuación fue ${score} de ${currentQuiz.length}!\n¡Gracias por participar!`;
 }
 
 // Regresar
