@@ -210,3 +210,20 @@ function goHome() {
   document.getElementById("menu").classList.remove("hidden");
   document.getElementById("result").classList.add("hidden");
 }
+
+// Cambiar color de fondo
+const colorInput = document.getElementById("bgColor");
+
+colorInput.addEventListener("input", (e) => {
+  document.body.style.backgroundColor = e.target.value;
+  localStorage.setItem("bgColor", e.target.value);
+});
+
+// Restaurar color al cargar
+window.addEventListener("load", () => {
+  const savedColor = localStorage.getItem("bgColor");
+  if (savedColor) {
+    document.body.style.backgroundColor = savedColor;
+    colorInput.value = savedColor;
+  }
+});
