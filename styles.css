@@ -103,7 +103,6 @@ h1 {
 @media (min-width: 1024px) {
   body {
     transform: scale(0.5);
-    transform-origin: top center;
-    height: 200vh;
+    transform-origin: center center;
   }
 }
