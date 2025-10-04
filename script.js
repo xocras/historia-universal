@@ -79,7 +79,7 @@ const quizzes = {
       c: 0,
     },
     {
-      q: "¿Cómo se llama la caída simbólica del Imperio Romano de Occidente?",
+      q: "¿En qué año fue la caída simbólica del Imperio Romano de Occidente?",
       a: ["476 d.C.", "1453 d.C.", "800 d.C."],
       c: 0,
     },
